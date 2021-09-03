@@ -51,7 +51,7 @@ tx_HHL_ENG<-tx_HHL_ENG %>% mutate(total_over5= `1`+`2`+`3`+`4`, less_than_well=`
 View(tx_HHL_ENG)
 tx_HHL_ENG_df<-as.data.frame (tx_HHL_ENG)
 
-write.csv(tx_HHL_ENG_df,"~/Language Services Report FY 2021/data/Census Data - HHL/tx5yr_HHL_ENG_df.csv", row.names = TRUE)
+write.csv(tx_HHL_ENG_df,"~data/Census Data - HHL/tx5yr_HHL_ENG_df.csv", row.names = TRUE)
 
 ### Detailed Language report
 
@@ -80,3 +80,4 @@ tx_LANP_ENG<-tx_LANP_ENG %>% mutate(total_over5= `1`+`2`+`3`+`4`, less_than_well
   drop_na(LANP_label)
 View(tx_LANP_ENG)
 tx_HHL_ENG_df<-as.data.frame (tx_LANP_ENG)
+write.csv(tx_HHL_ENG_df,"~data/Census Data - HHL/tx5yr_HHL_ENG_detailed_df.csv", row.names = TRUE)
